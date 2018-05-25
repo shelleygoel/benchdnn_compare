@@ -16,15 +16,18 @@ This is a python script to compare benhdnn runs from different commits of MKLDNN
 
 ## Usage (run benchdnn and compare)
 
-`python benchdnn_compare.py build_run=True commits=[<>,<>,...] batch=<> raw_log_dir=<> `
+`python benchdnn_compare.py build_run=True mkldnn_dir=<path to mkldnn> compiler=<> commits=[<>,<>,...] batch=<> raw_log_dir=<> `
 
 build_run=True option enables:
-- for each commit build MKLNDNN
-- uses Intel MKLDNN directions for building MKLDNN.
-- for each commit 
+- for each commit build MKLNDNN, using standard Intel MKLDNN directions for building MKLDNN.
+- for each commit run benchdnn using the batch file.
 
 ## Usage (compare runs)
 `python benchdnn_compare.py raw_log_dir=<>`
+
+## Example
+This example demonstrates usage of benchdnn_compare, using real input and output. Samples of this input and output are available in examples folder.
+
 
 
 
